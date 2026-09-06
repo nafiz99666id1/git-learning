@@ -1,0 +1,53 @@
+1. git init
+2. git clone https://github.com/nafiz99666id1/gitone.git
+3. git status
+
+*reset*
+
+1. git reset (go to the previous stage)
+2. git reset --hard
+
+*stage*
+
+1. git add -all / git add -A (all things are added to the stage)
+2. git add . (current directory is added to the stage )
+3. git add * (All except Delete are in the stage.)  ***question***
+4.git add myFolder/three.txt (myFolder/three.txt, *.txt)
+
+*commit*
+
+1. git commit -m "I changed my file"
+(
+Befor commit,
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+)
+2. git reset HEAD~
+
+*remove rm*
+1. git rm two.txt (It removes the item and also add in stage)
+2. git rm two.txt -f (if you change the file content. It forcefully removes the item.)
+3.git rm --cached two.txt(it don't delet from your directory. But in stage it is delet)
+4. git rm -r " folderName " (for delet folder. Mean recursively delete a folder)
+
+*Checkout, Branching & Merging*
+
+1.git branch
+2.git branch "branch name" (initialy clone of main branch.)
+3.git branch -M main (for rename the branch)
+4.git checkout "branch name"
+5.git merge main -m "marge it with main"
+
+*Fetch, Pull & Push*
+
+1.git push origin main
+(Befor push anything type "git config --global credential.helper store")
+2.git fetch && git merge == git pull
+
+******Add leter by me*******
+
+*git to github*
+1.git add .
+2.git commit -m "Add new files"
+3.git remote add origin https://github.com/your-username/your-repo-name.git
+4.git push origin main
