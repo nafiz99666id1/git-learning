@@ -18,7 +18,7 @@
 
 1. git commit -m "I changed my file"
 (
-Befor commit,
+Before commit,
   git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
 )
@@ -27,8 +27,8 @@ Befor commit,
 *remove rm*
 1. git rm two.txt (It removes the item and also add in stage)
 2. git rm two.txt -f (if you change the file content. It forcefully removes the item.)
-3.git rm --cached two.txt(it don't delet from your directory. But in stage it is delet)
-4. git rm -r " folderName " (for delet folder. Mean recursively delete a folder)
+3.git rm --cached two.txt(it don't delete from your directory. But in stage it is delete)
+4. git rm -r " folderName " (for delete folder. Mean recursively delete a folder)
 
 *Checkout, Branching & Merging*
 
@@ -37,11 +37,12 @@ Befor commit,
 3.git branch -M main (for rename the branch)
 4.git checkout "branch name"
 5.git merge main -m "marge it with main"
+6.git branch -a(see the hidden file)
 
 *Fetch, Pull & Push*
 
 1.git push origin main
-(Befor push anything type "git config --global credential.helper store")
+(Before push anything type "git config --global credential.helper store")
 2.git fetch && git merge == git pull
 
 ******Add leter by me*******
@@ -51,3 +52,12 @@ Befor commit,
 2.git commit -m "Add new files"
 3.git remote add origin https://github.com/your-username/your-repo-name.git
 4.git push origin main
+
+*github to git 
+
+1.git config --global credential.helper store
+2.git clone https://github.com/nafiz99666id1/gitone.git
+3.git branch -a(see the hidden file)
+4.git switch fristBranch
+
+
