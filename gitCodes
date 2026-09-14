@@ -51,7 +51,8 @@ Before commit,
 1.git add .
 2.git commit -m "Add new files"
 3.git remote add origin https://github.com/your-username/your-repo-name.git
-4.git push origin main
+4.rm -rf "git file/.git"  (If in the git, we have .git . we need to remove it.)
+5.git push origin main
 
 *github to git 
 
@@ -59,6 +60,3 @@ Before commit,
 2.git clone https://github.com/nafiz99666id1/gitone.git
 3.git branch -a(see the hidden file)
 4.git switch fristBranch
-
-
-
