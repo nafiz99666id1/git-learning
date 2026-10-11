@@ -4,8 +4,9 @@
 
 *reset*
 
-1. git reset (go to the previous stage)
-2. git reset --hard
+1. git reset (add to the previous stage)
+2. git reset HERD~ (commit to the previous stage)
+3. git resrt --herd(if you delet file it don't come with reset, for that ues it)
 
 *stage*
 
@@ -24,7 +25,7 @@ Before commit,
 )
 2. git reset HEAD~
 
-*remove rm*
+*remove rm* ( we use it because it derectly commit it. )
 1. git rm two.txt (It removes the item and also add in stage)
 2. git rm two.txt -f (if you change the file content. It forcefully removes the item.)
 3.git rm --cached two.txt(it don't delete from your directory. But in stage it is delete)
